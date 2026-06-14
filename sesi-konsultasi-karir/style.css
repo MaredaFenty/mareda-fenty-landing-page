@@ -407,8 +407,8 @@
 
     /* ─── PENDEKATAN ─── */
     .approach-section {
-      padding: 0 56px 120px;
-      background: var(--parchment);
+      padding: 64px 56px 120px;
+      background: var(--white);
     }
 
     .approach-inner { max-width: 1200px; margin: 0 auto; }
