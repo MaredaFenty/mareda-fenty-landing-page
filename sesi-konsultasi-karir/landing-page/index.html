@@ -217,37 +217,75 @@
         <span class="eyebrow">Kata Mereka</span>
         <h2>Yang dirasakan<br>setelah sesi</h2>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="t-stars">
-            <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
-          </div>
-          <p class="t-quote">"Alhamdulillah saya dapet jobnya! Abis sharing waktu itu saya jadi makin pede pas test teknis. Makasii banyak bu Fenty."</p>
-          <div class="t-author">
-            <strong>Nadia</strong>
-            <span>Job Seeker · Baru diterima kerja</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="t-stars">
-            <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
-          </div>
-          <p class="t-quote">"Akhirnya saya merenungkan kembali untuk lebih mengenal diri sendiri. Hal yang paling utama adalah berusaha selesai dengan diri sendiri, dan sesi ini yang mengawali itu."</p>
-          <div class="t-author">
-            <strong>Gita</strong>
-            <span>Profesional · Proses mengenal diri</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="t-stars">
-            <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
-          </div>
-          <p class="t-quote">"Alhamdulillah kak, aku lolos delegasi ke Bali! Makasih yah kak ilmu yang udah kakak kasih."</p>
-          <div class="t-author">
-            <strong>M.B.</strong>
-            <span>Mahasiswa · Lolos seleksi delegasi</span>
-          </div>
-        </div>
+        <div class="testimonials-carousel">
+          <div class="tc-track" id="tc-track">
+
+            <!-- TESTIMONI 1 — asli -->
+            <div class="testimonial-card">
+              <div class="t-stars">
+                <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+              </div>
+              <p class="t-quote">"Alhamdulillah saya dapet jobnya! Abis sharing waktu itu saya jadi makin pede pas test teknis. Makasii banyak bu Fenty."</p>
+              <div class="t-author">
+                <strong>Nadia</strong>
+                <span>Job Seeker · Baru diterima kerja</span>
+              </div>
+            </div>
+
+            <!-- TESTIMONI 2 — asli -->
+            <div class="testimonial-card">
+              <div class="t-stars">
+                <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+              </div>
+              <p class="t-quote">"Akhirnya saya merenungkan kembali untuk lebih mengenal diri sendiri. Hal yang paling utama adalah berusaha selesai dengan diri sendiri, dan sesi ini yang mengawali itu."</p>
+              <div class="t-author">
+                <strong>Gita</strong>
+                <span>Profesional · Proses mengenal diri</span>
+              </div>
+            </div>
+
+            <!-- TESTIMONI 3 — asli -->
+            <div class="testimonial-card">
+              <div class="t-stars">
+                <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+              </div>
+              <p class="t-quote">"Alhamdulillah kak, aku lolos delegasi ke Bali! Makasih yah kak ilmu yang udah kakak kasih."</p>
+              <div class="t-author">
+                <strong>M.B.</strong>
+                <span>Mahasiswa · Lolos seleksi delegasi</span>
+              </div>
+            </div>
+   <!--
+    ═══════════════════════════════════════════════
+    CARA TAMBAH TESTIMONI BARU — duplikat blok ini:
+
+    <div class="testimonial-card">
+      <div class="t-stars">
+        <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+      </div>
+      <p class="t-quote">"Kutipan testimoni di sini."</p>
+      <div class="t-author">
+        <strong>Nama</strong>
+        <span>Profil singkat · Hasil yang dicapai</span>
+      </div>
+    </div>
+
+    Kalau total kartu masih 3 atau kurang → carousel
+    tidak aktif, tampil grid biasa seperti semula.
+    Kalau 4+ → carousel otomatis aktif.
+    ═══════════════════════════════════════════════
+    -->
+    </div><!-- /tc-track -->
+
+      <!-- Tombol & dots — hanya muncul kalau kartu > 3 -->
+      <div class="tc-nav" id="tc-nav" style="display:none">
+        <button class="tc-btn" id="tc-prev" aria-label="Sebelumnya">&#8592;</button>
+        <div class="tc-dots" id="tc-dots"></div>
+        <button class="tc-btn" id="tc-next" aria-label="Berikutnya">&#8594;</button>
+      </div>
+
+    </div><!-- /testimonials-carousel -->
+            
       </div>
     </div>
   </section>
